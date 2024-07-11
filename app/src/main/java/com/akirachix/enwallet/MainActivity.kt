@@ -23,11 +23,20 @@ class MainActivity : AppCompatActivity() {
 
     fun displayExpense(){
         var expense1 = Expense("","KES 20000","SALARY","2 JUNE 2024")
-        var expense2 = Expense("http://schemas.android.com/apk/res/android","KES 20000","RENT","2 FEBRUARY 2024")
+        var expense2 = Expense("","KES 20000","RENT","2 FEBRUARY 2024")
         var expense3 = Expense("","KES 20000","SALARY","2 JANUARY 2024")
+        var expense4 = Expense("","KES 20000","SALARY","2 JUNE 2024")
+        var expense5 = Expense("","KES 20000","RENT","2 FEBRUARY 2024")
+        var expense6 = Expense("","KES 20000","SALARY","2 JANUARY 2024")
+        var expense7 = Expense("","KES 20000","SALARY","2 JUNE 2024")
+        var expense8= Expense("","KES 20000","RENT","2 FEBRUARY 2024")
+        var expense9 = Expense("","KES 20000","SALARY","2 JANUARY 2024")
+        var expense10 = Expense("","KES 20000","SALARY","2 JUNE 2024")
+        var expense11 = Expense("","KES 20000","RENT","2 FEBRUARY 2024")
+        var expense12 = Expense("","KES 20000","SALARY","2 JANUARY 2024")
 
 
-        val expenseList = listOf(expense1,expense2,expense3)
+        val expenseList = listOf(expense1,expense2,expense3,expense4,expense5,expense6,expense7,expense8,expense9,expense10,expense11,expense12)
         val expenseAdapter = ExpenseAdapter(expenseList)
         binding.rvExpense.adapter = expenseAdapter
     }
